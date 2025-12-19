@@ -30,11 +30,22 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         "@": pathSrc,
       },
     },
+    //css 预处理器配置
     css: {
       preprocessorOptions: {
         // 定义全局 SCSS 变量
         scss: {
+          // 忽略 node_modules 中所有第三方依赖的 Sass 警告
+          quietDeps: true,
           additionalData: `@use "@/styles/variables.scss" as *;`,
+          // 兜底：手动过滤 if-function 警告（双重保险）
+          logger: {
+            warn: (message) => {
+              if (!message.includes("if-function")) {
+                console.warn(message);
+              }
+            },
+          },
         },
       },
     },
