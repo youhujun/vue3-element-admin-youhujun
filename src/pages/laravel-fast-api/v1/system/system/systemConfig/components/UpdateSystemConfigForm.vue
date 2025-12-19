@@ -190,10 +190,10 @@ const initUpdateForm = () => {
 //定义props
 const props = withDefaults(
   defineProps<{
-    propsUpdateFrom?: UpdateSystemConfig;
+    propsUpdateForm?: UpdateSystemConfig;
   }>(),
   {
-    propsUpdateFrom: () => ({
+    propsUpdateForm: () => ({
       id: 0,
       item_type: ItemType.string,
       item_label: "",
@@ -209,9 +209,9 @@ const props = withDefaults(
 
 //监听父级表单值的变化
 watch(
-  () => props.propsUpdateFrom,
-  (newVal, oldVal) => {
-    console.log("整个对象变化：", newVal, oldVal);
+  () => props.propsUpdateForm,
+  (newVal) => {
+    //console.log("整个对象变化：", newVal, oldVal);
     Object.assign(updateForm, newVal);
     //updateForm.item_type = String(newVal.item_type)
     if (newVal.item_type === 10) {

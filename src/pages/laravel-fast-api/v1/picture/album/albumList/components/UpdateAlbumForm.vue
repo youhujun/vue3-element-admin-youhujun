@@ -126,10 +126,10 @@ const initUpdateForm = () => {
 //定义props
 const props = withDefaults(
   defineProps<{
-    propsUpdateFrom?: UpdateAlbum;
+    propsUpdateForm?: UpdateAlbum;
   }>(),
   {
-    propsUpdateFrom: () => ({
+    propsUpdateForm: () => ({
       id: 0,
       album_type: 10,
       album_name: "",
@@ -141,7 +141,7 @@ const props = withDefaults(
 
 //监听父级表单值的变化
 watch(
-  () => props.propsUpdateFrom,
+  () => props.propsUpdateForm,
   (newVal) => {
     //console.log('整个对象变化：', newVal, oldVal)
     Object.assign(updateForm, newVal);

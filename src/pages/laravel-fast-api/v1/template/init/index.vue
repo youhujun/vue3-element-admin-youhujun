@@ -44,7 +44,7 @@
       </template>
       <!-- 修改表单 -->
       <template #updateForm>
-        <!-- <UpdateReplaceForm ref="updateFormRef" :props-update-form="propsUpdateFrom"   @update:CloseDialog="listenToCloseDialog"></UpdateReplaceForm> -->
+        <!-- <UpdateReplaceForm ref="updateFormRef" :props-update-form="propsUpdateForm"   @update:CloseDialog="listenToCloseDialog"></UpdateReplaceForm> -->
       </template>
       <!-- 显示内容 -->
       <template #showContent>

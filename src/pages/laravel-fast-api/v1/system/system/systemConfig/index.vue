@@ -4,8 +4,8 @@
  * @Author: youhujun 2900976495@qq.com
  * @Date: 2025-09-29 09:25:38
  * @LastEditors: youhujun youhu8888@163.com
- * @LastEditTime: 2025-12-10 03:32:50
- * @FilePath: d:\wwwroot\Open\Vue\vue3-element-admin-youhujun\src\pages\laravel-fast-api\v1\system\system\systemConfig\index.vue
+ * @LastEditTime: 2025-12-19 16:41:39
+ * @FilePath: \src\pages\laravel-fast-api\v1\system\system\systemConfig\index.vue
  * Copyright (C) 2025 youhujun. All rights reserved.
 -->
 <template>
@@ -214,7 +214,6 @@ watch(
   () => beforeSystemConfigForm.value,
   (newValue) => {
     //console.log('当前表单', newValue)
-    //console.log('之前表单', oldValue)
     if (newValue) {
       Object.assign(propsUpdateForm.value, newValue);
     }

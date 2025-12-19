@@ -339,7 +339,7 @@ const listenToCloseDialog = () => {
   getUserList();
   //初始化表单
   initPropsCreateForm();
-  //initPropsUpdateFrom()
+  //initpropsUpdateForm()
   //初始化查看详情
   //initPropsRowData()
   dialogVisible.value = false;

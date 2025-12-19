@@ -362,7 +362,7 @@ const listenToCloseDialog = () => {
   permissionStore.resetRouter();
   //初始化表单
   initPropsCreateForm();
-  initPropsUpdateFrom();
+  initpropsUpdateForm();
   //初始化查看详情
   initPropsRowData();
   dialogVisible.value = false;
@@ -383,7 +383,7 @@ const initPropsCreateForm = () => {
 };
 
 //初始化更新表单传值
-const initPropsUpdateFrom = () => {
+const initpropsUpdateForm = () => {
   propsUpdateForm.value.parent_id = 0;
   propsUpdateForm.value.id = 0;
   propsUpdateForm.value.deep = 1;
