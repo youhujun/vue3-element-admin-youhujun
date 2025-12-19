@@ -106,7 +106,7 @@
         <CreateUserAuthForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateUserAuthForm>
       </template>
       <!-- 修改表单 -->

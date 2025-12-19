@@ -100,7 +100,7 @@
         <CreateReplaceTreeForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateReplaceTreeForm>
       </template>
       <!-- 修改表单 -->
@@ -108,7 +108,7 @@
         <UpdateReplaceTreeForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateReplaceTreeForm>
       </template>
       <!-- 显示内容 -->
@@ -117,7 +117,7 @@
           :props-row-data="propsRowData"
           :props-show-index="propsShowIndex"
           @update:show-index="listenToUpdateIndex"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></ReplaceRowData>
       </template>
     </YhDialog>

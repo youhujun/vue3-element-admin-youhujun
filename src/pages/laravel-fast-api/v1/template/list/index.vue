@@ -126,7 +126,7 @@
       <template #addForm>
         <CreateReplaceForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateReplaceForm>
       </template>
       <!-- 修改表单 -->
@@ -134,7 +134,7 @@
         <UpdateReplaceForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateReplaceForm>
       </template>
     </YhDialog>

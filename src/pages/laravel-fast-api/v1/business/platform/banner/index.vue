@@ -99,7 +99,7 @@
       <template #addForm>
         <CreatePhoneBannerForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreatePhoneBannerForm>
       </template>
       <!-- 修改表单 -->
@@ -107,7 +107,7 @@
         <UpdatePhoneBannerForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdatePhoneBannerForm>
       </template>
     </YhDialog>

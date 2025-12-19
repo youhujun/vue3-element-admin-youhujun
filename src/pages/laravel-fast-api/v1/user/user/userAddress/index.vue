@@ -98,7 +98,7 @@
         <CreateUserAddressForm
           ref="createFormRef"
           :user-id="row.id"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateUserAddressForm>
       </template>
       <!-- 修改表单 -->

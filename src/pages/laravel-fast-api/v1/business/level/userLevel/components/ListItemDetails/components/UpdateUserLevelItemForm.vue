@@ -164,7 +164,7 @@ watch(
 );
 
 //emit
-const emit = defineEmits(["update:CloseDialog"]);
+const emit = defineEmits(["close-dialog"]);
 
 //提交
 const submitForm = async (formEl: FormInstance | undefined) => {
@@ -183,7 +183,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
       // 初始化表单
       initUpdateForm();
       // 6. 关闭对话框（可选，根据业务需求）
-      emit("update:CloseDialog", false);
+      emit("close-dialog", false);
       // 重新加载用户级别列表
       bus.emit("reloadUserLevelList", true);
     }

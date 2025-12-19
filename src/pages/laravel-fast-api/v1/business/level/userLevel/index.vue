@@ -99,7 +99,7 @@
       <template #addForm>
         <CreateUserLevelForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateUserLevelForm>
       </template>
       <!-- 修改表单 -->
@@ -107,7 +107,7 @@
         <UpdateUserLevelForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateUserLevelForm>
       </template>
     </YhDialog>

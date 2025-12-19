@@ -204,7 +204,7 @@ watch(
 );
 
 //emit
-const emit = defineEmits(["update:CloseDialog"]);
+const emit = defineEmits(["close-dialog"]);
 
 //提交
 const submitForm = async (formEl: FormInstance | undefined) => {
@@ -223,7 +223,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
       // 初始化表单
       initUpdateForm();
       // 6. 关闭对话框（可选，根据业务需求）
-      emit("update:CloseDialog", false);
+      emit("close-dialog", false);
     }
   } catch (error) {
     // 5. 处理错误（校验失败或接口报错）

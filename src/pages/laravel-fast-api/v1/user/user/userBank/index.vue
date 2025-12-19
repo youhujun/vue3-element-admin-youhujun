@@ -104,7 +104,7 @@
         <CreateUserBankForm
           ref="createFormRef"
           :user-id="row.id"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateUserBankForm>
       </template>
       <!-- 修改表单 -->

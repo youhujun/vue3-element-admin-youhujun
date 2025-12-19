@@ -4,7 +4,7 @@
  * @Author: youhujun 2900976495@qq.com
  * @Date: 2025-09-29 09:25:38
  * @LastEditors: youhujun youhu8888@163.com
- * @LastEditTime: 2025-12-19 16:41:39
+ * @LastEditTime: 2025-12-19 22:41:08
  * @FilePath: \src\pages\laravel-fast-api\v1\system\system\systemConfig\index.vue
  * Copyright (C) 2025 youhujun. All rights reserved.
 -->
@@ -117,7 +117,7 @@
         <CreateSystemConfigForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateSystemConfigForm>
       </template>
       <!-- 修改表单 -->
@@ -125,7 +125,7 @@
         <UpdateSystemConfigForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateSystemConfigForm>
       </template>
     </YhDialog>

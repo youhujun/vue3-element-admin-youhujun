@@ -101,7 +101,7 @@
         <CreateGoodsClassTreeForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateGoodsClassTreeForm>
       </template>
       <!-- 修改表单 -->
@@ -109,7 +109,7 @@
         <UpdateGoodsClassTreeForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateGoodsClassTreeForm>
       </template>
       <!-- 显示内容 -->
@@ -118,7 +118,7 @@
           :props-row-data="propsRowData"
           :props-show-index="propsShowIndex"
           @update:show-index="listenToUpdateIndex"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></GoodsClassRowData>
       </template>
     </YhDialog>

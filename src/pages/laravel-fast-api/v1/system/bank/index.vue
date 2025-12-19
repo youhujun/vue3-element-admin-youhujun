@@ -124,17 +124,14 @@
     >
       <!-- 添加表单 -->
       <template #addForm>
-        <CreateBankForm
-          ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
-        ></CreateBankForm>
+        <CreateBankForm ref="createFormRef" @close-dialog="listenToCloseDialog"></CreateBankForm>
       </template>
       <!-- 修改表单 -->
       <template #updateForm>
         <UpdateBankForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateBankForm>
       </template>
     </YhDialog>

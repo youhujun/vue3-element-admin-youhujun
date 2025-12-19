@@ -111,7 +111,7 @@
       <template #addForm>
         <CreateVoiceConfigForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateVoiceConfigForm>
       </template>
       <!-- 修改表单 -->
@@ -119,7 +119,7 @@
         <UpdateVoiceConfigForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateVoiceConfigForm>
       </template>
     </YhDialog>

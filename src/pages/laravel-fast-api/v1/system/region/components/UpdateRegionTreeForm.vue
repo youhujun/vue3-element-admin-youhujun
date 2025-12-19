@@ -111,7 +111,7 @@ const initUpdateForm = () => {
   updateForm.sort = 100;
 };
 //emit
-const emit = defineEmits(["update:CloseDialog"]);
+const emit = defineEmits(["close-dialog"]);
 
 //提交
 const submitForm = async (formEl: FormInstance | undefined) => {
@@ -127,7 +127,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
       resetForm(formEl);
       // 初始化表单
       initUpdateForm();
-      emit("update:CloseDialog", false);
+      emit("close-dialog", false);
     }
   } catch (error) {
     const err = error as Error;

@@ -102,7 +102,7 @@
       <template #addForm>
         <CreateNoticeForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateNoticeForm>
       </template>
       <!-- 修改表单 -->
@@ -110,7 +110,7 @@
         <UpdateNoticeForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateNoticeForm>
       </template>
     </YhDialog>

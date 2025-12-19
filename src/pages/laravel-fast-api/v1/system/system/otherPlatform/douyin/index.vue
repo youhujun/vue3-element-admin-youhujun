@@ -101,7 +101,7 @@
       <template #addForm>
         <CreateSystemDouyinConfigForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateSystemDouyinConfigForm>
       </template>
       <!-- 修改表单 -->
@@ -109,7 +109,7 @@
         <UpdateSystemDouyinConfigForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateSystemDouyinConfigForm>
       </template>
     </YhDialog>

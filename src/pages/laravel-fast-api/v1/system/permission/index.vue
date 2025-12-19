@@ -102,7 +102,7 @@
         <CreateMenuForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateMenuForm>
       </template>
       <!-- 修改表单 -->
@@ -110,7 +110,7 @@
         <UpdateMenuForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateMenuForm>
       </template>
       <!-- 显示内容 -->
@@ -119,7 +119,7 @@
           :props-row-data="propsRowData"
           :props-show-index="propsShowIndex"
           @update:show-index="listenToUpdateIndex"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></MenuRowData>
       </template>
     </YhDialog>

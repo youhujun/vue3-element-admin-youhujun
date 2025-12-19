@@ -111,7 +111,7 @@
         <CreateRoleTreeForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateRoleTreeForm>
       </template>
       <!-- 修改表单 -->
@@ -119,7 +119,7 @@
         <UpdateRoleTreeForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateRoleTreeForm>
       </template>
       <!-- 显示内容 -->
@@ -128,7 +128,7 @@
           :props-row-data="propsRowData"
           :props-show-index="propsShowIndex"
           @update:show-index="listenToUpdateIndex"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></RoleRowData>
       </template>
     </YhDialog>

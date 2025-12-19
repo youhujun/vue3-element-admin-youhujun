@@ -69,17 +69,14 @@
     >
       <!-- 添加表单 -->
       <template #addForm>
-        <CreateAlbumForm
-          ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
-        ></CreateAlbumForm>
+        <CreateAlbumForm ref="createFormRef" @close-dialog="listenToCloseDialog"></CreateAlbumForm>
       </template>
       <!-- 修改表单 -->
       <template #updateForm>
         <UpdateAlbumForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateAlbumForm>
       </template>
     </YhDialog>

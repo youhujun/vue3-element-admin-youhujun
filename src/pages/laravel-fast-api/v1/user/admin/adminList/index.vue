@@ -102,17 +102,14 @@
     >
       <!-- 添加表单 -->
       <template #addForm>
-        <CreateAdminForm
-          ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
-        ></CreateAdminForm>
+        <CreateAdminForm ref="createFormRef" @close-dialog="listenToCloseDialog"></CreateAdminForm>
       </template>
       <!-- 修改表单 -->
       <template #updateForm>
         <UpdateAdminForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateAdminForm>
       </template>
     </YhDialog>

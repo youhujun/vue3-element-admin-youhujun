@@ -60,7 +60,7 @@
         <CreateUserLevelItemForm
           ref="createFormRef"
           :user-level-id="rowData.id"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateUserLevelItemForm>
       </template>
       <!-- 修改表单 -->
@@ -69,7 +69,7 @@
           ref="updateFormRef"
           :user-level-id="rowData.id"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateUserLevelItemForm>
       </template>
     </YhDialog>

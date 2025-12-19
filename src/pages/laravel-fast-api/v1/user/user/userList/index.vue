@@ -106,7 +106,7 @@
         <CreateUserForm
           ref="createFormRef"
           :props-create-form="propsCreateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateUserForm>
       </template>
       <!-- 修改表单 -->

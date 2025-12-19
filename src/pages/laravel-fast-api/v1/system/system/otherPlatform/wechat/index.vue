@@ -101,7 +101,7 @@
       <template #addForm>
         <CreateSystemWechatConfigForm
           ref="createFormRef"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></CreateSystemWechatConfigForm>
       </template>
       <!-- 修改表单 -->
@@ -109,7 +109,7 @@
         <UpdateSystemWechatConfigForm
           ref="updateFormRef"
           :props-update-form="propsUpdateForm"
-          @update:close-dialog="listenToCloseDialog"
+          @close-dialog="listenToCloseDialog"
         ></UpdateSystemWechatConfigForm>
       </template>
     </YhDialog>
